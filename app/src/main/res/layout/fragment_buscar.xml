@@ -1,0 +1,78 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="100dp"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    tools:context="com.example.gerardo.testapilastfm.ui.fragment.BuscarFragment">
+
+
+    <EditText
+        android:id="@+id/buscar_artista"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:hint="@string/hint_buscar_artista"
+        android:gravity="center_horizontal" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:text="Buscar"
+        android:drawableLeft="@drawable/ic_buscar_artista"
+        android:background="@color/colorPrimary"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@+id/buscar_artista"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/btn_buscar" />
+
+    <ImageView
+        android:id="@+id/banda1"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:src="@drawable/banda1"
+        android:layout_below="@+id/btn_buscar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:scaleType="centerCrop"
+        android:rotation="22"
+        android:layout_marginBottom="25dp"
+        />
+    <ImageView
+        android:id="@+id/banda2"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:src="@drawable/banda2"
+        android:layout_below="@+id/btn_buscar"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:scaleType="centerCrop"
+        android:rotation="-22"
+        android:layout_marginBottom="25dp"
+        />
+    <ImageView
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:src="@drawable/banda3"
+        android:layout_below="@+id/banda1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:scaleType="centerCrop"
+        android:rotation="-22"
+        />
+    <ImageView
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:src="@drawable/banda4"
+        android:layout_below="@+id/banda2"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:scaleType="centerCrop"
+        android:rotation="22"
+        />
+
+
+
+</RelativeLayout>
